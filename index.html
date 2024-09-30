@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feliz cumpleaños</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="Script" href="script.js"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="Titulo">
+        <h1>Mi señorita Mia uwu</h1>
+    </header>
+    <br>
+    <section class="container">
+        <a href="https://youtu.be/0C1cVATvlQk?si=uNrdLNkt9cE70Ze1" target="_blank">
+            <article class="olainsano">
+                <h2>Nuestros inicios uwu</h2>
+                <p>Presiona el recuadro Bv</p>
+                <img src="img/ff.png" width="400"/>
+                <p>Esta cancion como te dije siempre me hace acordar a ti que es de las primeras que escuchaba y pensaba en lo mucho que agradecia tener a alguien como tu en mi vida uwu es decir con esta cancion me empeze a enamorar de ti y se que no te gustan las canciones en ingles pero igual la pongo aca uwu TE AMO MUAC osea porque esta cancion es tan especial es que es como una cancion que decia algo de estar solo y asi :V es porque antes de ti yo ya estaba perdiendo algo mi rumbo por asi decirlo muy eddy de mi parte pero antes de ti estaba "solo" pero contigo ya casi dos años estoy muy feliz te amo mucho y siempre te amare mi vida</p>
+            </article>
+        </a>
+    <br>
+        <a href="https://youtu.be/00uPgn-8Nvg?si=jVISsaM8dK0BcR5X" target="_blank">
+            <article class="olainsano">
+                <h2>Amor de mi life</h2>
+                <p>Te  fui conociendo y esta cancion empezo a tener mas sentido para mi porque quiero que tu seas mi duki yo tu emilia Bv XD te amo bb uwu </p>
+                <img src="img/du.png" width="400"/>
+            </article>
+        </a>
+    <br>
+    <div class="secret-message">
+        <input type="password" placeholder="Ingresa el código secreto">
+        <button onclick="revealMessage()">Revelar mensaje</button>
+        <p id="secret"></p>
+    </div>
+    
+    <script>
+        function revealMessage() {
+            const input = document.querySelector('.secret-message input').value;
+            const secret = document.getElementById("secret");
+            const password = "SebxMia";  // Aquí defines la contraseña
+            const message = "Te amo mi amor te amo tanto te amo y te amare siempre jamas olivdes que tiens un chico a tu lado, este mensane es un recordatorio para decirte FELIZ CUMPLEAÑOS <3333";  // Aquí defines el mensaje que quieres revelar
+
+            if (input === password) {
+            secret.textContent = message;
+            secret.style.color = "#ff69b4";
+            secret.style.fontFamily = "'Dancing Script', cursive";
+            } else {
+            secret.textContent = "Código incorrecto.";
+            secret.style.color = "red";
+                }
+            }
+        </script>
+        
+    </section>
+    <footer>
+    <section>
+        <a href="#Titulo">Ir al titulo</a>
+        <br>
+    </section>
+    <p>Copyright 2025</p>
+    </footer>
+
+</body>
+</html>
